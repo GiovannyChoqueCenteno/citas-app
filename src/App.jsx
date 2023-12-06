@@ -4,7 +4,7 @@ import Formulario from "./components/Formulario";
 import Listado from "./components/Listado";
 
 const App = () => {
-  const INITIAL = JSON.parse(localStorage.getItem('pacientes')) ?? [];
+  const INITIAL = JSON.parse(localStorage.getItem("pacientes")) ?? [];
   const [pacientes, setPacientes] = useState(INITIAL);
   const [paciente, setPaciente] = useState({});
   const eliminarPaciente = (id) => {
